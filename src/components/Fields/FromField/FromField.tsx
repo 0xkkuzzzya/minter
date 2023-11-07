@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import FromInput from '../../input/FromInput'
-import PopupFromChangeToken from '../../Popup/PopupFromChangeToken'
+import { InputAmount } from '../../Input/InputAmount'
+import { PopupSelectFromToken } from '../../Popup/PopupFrom/PopupSelectFromToken'
+
 
 const ConvertFrom = styled.div `
     width:85%;
@@ -11,14 +12,16 @@ const ConvertFrom = styled.div `
     margin-top: 35px;
     margin-left:auto;
     margin-right:auto;
-    display:flex;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 `
 
 export const FromField = () => {
     return(
         <ConvertFrom>
-            <PopupFromChangeToken></PopupFromChangeToken>
-            <FromInput></FromInput>
+            <PopupSelectFromToken></PopupSelectFromToken>
+            <InputAmount></InputAmount>
         </ConvertFrom>
     )
 }

@@ -5,7 +5,7 @@ const ConvertSwapButton = styled.div `
     height:50px;
     margin-left:auto;
     margin-right:auto;
-    background: linear-gradient(#7cc2fe, #2c96ff);
+    background: linear-gradient(to right, #7cc2fe, #2c96ff);
     margin-top: 25px;
     border-radius: 5px;
     color: #333;

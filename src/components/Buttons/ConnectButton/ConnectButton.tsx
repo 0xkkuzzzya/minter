@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const ButtonConnect = styled.button`
     width: 120px;
     height: 40px;
-    background: linear-gradient(#77bff9, #2d96ff);
+    background: linear-gradient(to right, #77bff9, #2d96ff);
     color: #333;
     font-family: 'Metropolis', sans-serif;
     border-radius:5px;
