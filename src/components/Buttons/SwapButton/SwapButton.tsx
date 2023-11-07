@@ -8,7 +8,7 @@ const ConvertSwapButton = styled.div `
     background: linear-gradient(to right, #7cc2fe, #2c96ff);
     margin-top: 25px;
     border-radius: 5px;
-    color: #333;
+    color: black;
     font-family: 'Metropolis', sans-serif;
     text-align: center;
     display: flex;
@@ -17,8 +17,8 @@ const ConvertSwapButton = styled.div `
 `
 
 const ButtonSwapText = styled.a`
-   font-weight: 600;
-   font-size: 17px;
+   font-weight: 500;
+   font-size: 20px;
 `
 
 export const SwapButton = () => {

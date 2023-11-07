@@ -4,7 +4,7 @@ import { FromField } from './Fields/FromField/FromField'
 import { ToField } from './Fields/ToField/ToField'
 import { SwapButton } from './Buttons/SwapButton/SwapButton'
 import { TokenChange } from './Buttons/TokenChange/TokenChange'
-import { Info } from './Info/Info'
+import { InfoBlock } from './Info/InfoBlock'
 
 const MainContainer = styled.div `
     max-width: 400px;
@@ -26,7 +26,7 @@ const Container = () => {
             <FromField></FromField>
             <TokenChange></TokenChange>
             <ToField></ToField>
-            <Info></Info>
+            <InfoBlock></InfoBlock>
             <SwapButton></SwapButton>
         </MainContainer>
     )

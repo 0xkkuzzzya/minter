@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 const ButtonConnect = styled.button`
     width: 120px;
-    height: 40px;
+    height: 35px;
     background: linear-gradient(to right, #77bff9, #2d96ff);
-    color: #333;
+    color: black;
     font-family: 'Metropolis', sans-serif;
     border-radius:5px;
     text-align:center;
@@ -14,8 +14,8 @@ const ButtonConnect = styled.button`
 `
 
 const ButtonConnectText = styled.a`
-   font-weight: 600;
-   font-size: 16px;
+   font-weight: 500;
+   font-size: 17px;
 `
 
 export const ConnectButton = () => {
