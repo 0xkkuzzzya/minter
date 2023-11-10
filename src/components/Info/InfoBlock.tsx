@@ -18,6 +18,7 @@ const InfoText = styled.div `
 
 const InfoImg = styled.img `
     margin-top:-5px;
+    cursor: pointer;
 `
 
 
