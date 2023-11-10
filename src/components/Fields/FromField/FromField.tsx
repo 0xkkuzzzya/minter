@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { InputAmount } from '../../Input/InputAmount'
 import { PopupSelectFromToken } from '../../Popup/PopupFrom/PopupSelectFromToken'
+import { Balance } from '../../Balance/Balance'
 
 
 const ConvertFrom = styled.div `
@@ -17,12 +18,26 @@ const ConvertFrom = styled.div `
     align-items: center;
 `
 
+const FromFieldText = styled.a`
+   font-weight: 500;
+   font-size: 20px;
+   color: white;
+   padding-left: 30px;
+   position: absolute;
+   margin-top: -125px;
+   margin-left: -30px;
+   font-family: 'Metropolis', sans-serif;
+   font-size: 16px;
+`
+
 export const FromField = () => {
     return(
-        <ConvertFrom>
-            <PopupSelectFromToken></PopupSelectFromToken>
-            <InputAmount></InputAmount>
-        </ConvertFrom>
+            <ConvertFrom>
+                <FromFieldText>From</FromFieldText>
+                <Balance></Balance>
+                <PopupSelectFromToken></PopupSelectFromToken>
+                <InputAmount></InputAmount>
+            </ConvertFrom>
     )
 }
 

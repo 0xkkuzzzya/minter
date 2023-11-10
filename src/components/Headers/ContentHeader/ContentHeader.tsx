@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const ContainerHeader = styled.div `
     width:85%;
-    margin-top: 15px;
+    margin-top: 35px;
     margin-left:auto;
     margin-right:auto;
 `

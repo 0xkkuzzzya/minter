@@ -7,7 +7,6 @@ const ConvertSwap = styled.div `
     height:50px;
     margin-left:auto;
     margin-right:auto;
-    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;

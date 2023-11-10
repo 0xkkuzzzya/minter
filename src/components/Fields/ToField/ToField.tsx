@@ -9,7 +9,6 @@ const ConvertTo = styled.div `
     background-color: #1a1a1a;
     border: 3px solid #333333;
     border-radius: 10px;
-    margin-top: 15px;
     margin-left:auto;
     margin-right:auto;
     display: flex;
@@ -23,8 +22,8 @@ const ToFieldOutputAmount = styled.div`
     background: transparent;
     color: rgb(220,220,220);
     text-align: right;
-    font-size: 21px;
-    padding-right: 8px;
+    font-size: 23px;
+    padding-right: 15px;
     padding-top:50px;
     font-family: system-ui, -apple-system,
      BlinkMacSystemFont, 'Segoe UI', Roboto, 
@@ -32,11 +31,23 @@ const ToFieldOutputAmount = styled.div`
      'Helvetica Neue', sans-serif;
 `
 
+const ToFieldText = styled.a`
+   font-weight: 500;
+   font-size: 20px;
+   color: white;
+   padding-left: 30px;
+   position: absolute;
+   margin-top: -125px;
+   margin-left: -30px;
+   font-family: 'Metropolis', sans-serif;
+   font-size: 16px;
+`
 
 
 export const ToField = () => {
     return(
         <ConvertTo>
+            <ToFieldText>To</ToFieldText>
             <PopupSelectToToken></PopupSelectToToken>
             <ToFieldOutputAmount>
                 0
