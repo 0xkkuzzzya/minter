@@ -18,7 +18,7 @@ const BalanceText = styled.div`
     @media (max-width: 425px){
         margin-left: 210px;
     }
-    @media (max-width: 390px){
+    @media (max-width: 395px){
         margin-left: 180px;
     }
     @media (max-width: 375px){
