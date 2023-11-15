@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import sun from '../../../../assets/svg/sun.svg'
 
 const PopupChangeFromToken = styled.button`
     width:100%;
@@ -7,6 +8,11 @@ const PopupChangeFromToken = styled.button`
     border:none;
     outline: none;
     margin-left: 15px;
+`
+
+const PopupChangeFromTokenIamge = styled.img`
+    width: 40px;
+    height: 40px;
 `
 
 export const PopupFromButton = () => {

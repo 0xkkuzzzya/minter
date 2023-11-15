@@ -11,6 +11,7 @@ const ButtonConnect = styled.button`
     border:none;
     margin-left: auto;
     margin-right: 15px;
+    cursor: pointer;
 `
 
 const ButtonConnectText = styled.a`

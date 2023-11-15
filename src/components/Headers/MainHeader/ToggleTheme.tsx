@@ -5,6 +5,7 @@ const BlackThemeIcon = styled.img `
     height: 28px;
     width: 28px;
     margin-right: 65px;
+    cursor: pointer;
 `
 
 const WhiteThemeIcon = styled.div `

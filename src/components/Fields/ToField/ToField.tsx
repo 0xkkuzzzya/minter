@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { PopupSelectToToken } from '../../Popup/PopupTo/PopupSelectToToken'
 import { PopupToButton } from '../../Buttons/PopupButtons/PopupToButton/PopupToButton'
+import { BalanceTo } from '../../Balance/BalanceTo'
 
 
 const ConvertTo = styled.div `
@@ -48,6 +49,7 @@ export const ToField = () => {
     return(
         <ConvertTo>
             <ToFieldText>To</ToFieldText>
+            <BalanceTo></BalanceTo>
             <PopupSelectToToken></PopupSelectToToken>
             <ToFieldOutputAmount>
                 0

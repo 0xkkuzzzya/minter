@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { InputAmount } from '../../Input/InputAmount'
 import { PopupSelectFromToken } from '../../Popup/PopupFrom/PopupSelectFromToken'
-import { Balance } from '../../Balance/Balance'
+import { BalanceFrom } from '../../Balance/BalanceFrom'
 
 
 const ConvertFrom = styled.div `
@@ -34,7 +34,7 @@ export const FromField = () => {
     return(
             <ConvertFrom>
                 <FromFieldText>From</FromFieldText>
-                <Balance></Balance>
+                <BalanceFrom></BalanceFrom>
                 <PopupSelectFromToken></PopupSelectFromToken>
                 <InputAmount></InputAmount>
             </ConvertFrom>

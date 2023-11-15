@@ -13,7 +13,7 @@ const ButtonBalance = styled.button`
    outline: none;
 `
 
-export const BalanceButton = () => {
+export const BalanceButtonFrom = () => {
     return(
         <ButtonBalance>
             Available: 10.59 ATOM
