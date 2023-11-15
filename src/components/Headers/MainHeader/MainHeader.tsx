@@ -18,7 +18,7 @@ const HeaderImage = styled.img`
     margin-left: 65px;
     margin-right: auto;
     @media (max-width: 500px){
-        margin-left: 35px;
+        margin-left: 26px;
     }
 `
 

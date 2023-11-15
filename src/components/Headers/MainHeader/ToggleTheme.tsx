@@ -7,7 +7,7 @@ const BlackThemeIcon = styled.img `
     margin-right: 65px;
     cursor: pointer;
     @media (max-width: 500px){
-        margin-right: 35px;
+        margin-right: 26px;
     }
 `
 
