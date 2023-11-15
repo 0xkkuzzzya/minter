@@ -10,13 +10,20 @@ const MainContainer = styled.div `
     max-width: 400px;
     height:550px;
     background-color: #232323;
+    margin-top:150px;
     border-radius:7px;
-    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     border: 2px solid black;
+    @media (max-width: 500px){
+        border: none;
+        max-width:100%;
+        height:100%;
+        border-radius: 0px;
+        margin-top:0px;
+    }
 `
 
 const Container = () => {

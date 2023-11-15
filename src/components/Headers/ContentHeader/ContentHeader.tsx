@@ -5,6 +5,9 @@ const ContainerHeader = styled.div `
     margin-top: 35px;
     margin-left:auto;
     margin-right:auto;
+    @media (max-width: 500px){
+       margin-top:55px;
+    }
 `
 
 const ContainerHeaderText = styled.h2 `

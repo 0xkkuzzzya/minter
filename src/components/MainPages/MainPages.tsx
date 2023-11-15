@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { MainHeader } from '../Headers/MainHeader/MainHeader'
-import Container from '../Container'
+import Container from '../index'
 
 const App = styled.div `
     height: 100vh;

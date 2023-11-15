@@ -6,6 +6,9 @@ const BlackThemeIcon = styled.img `
     width: 28px;
     margin-right: 65px;
     cursor: pointer;
+    @media (max-width: 500px){
+        margin-right: 35px;
+    }
 `
 
 const WhiteThemeIcon = styled.div `
