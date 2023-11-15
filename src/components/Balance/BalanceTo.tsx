@@ -9,11 +9,14 @@ const BalanceText = styled.div`
     position: absolute;
     margin-top: -50px;
     margin-left: 198px;
-    @media (max-width: 390px){
-        margin-left: 173px;
+    @media (max-width: 500px){
+        margin-left: 240px;
     }
-    @media (max-width: 365px){
-        margin-left: 165px;
+    @media (max-width: 425px){
+        margin-left: 220px;
+    }
+    @media (max-width: 375px){
+        margin-left: 175px;
     }
     @media (max-width: 340px){
         margin-left: 138px;
