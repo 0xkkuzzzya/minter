@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Example } from '../../../Modal/TokenModal/TokenModal'
 
 const PopupChangeToToken = styled.button`
     width:100%;
@@ -11,6 +12,8 @@ const PopupChangeToToken = styled.button`
 
 export const PopupToButton = () => {
     return(
-        <PopupChangeToToken></PopupChangeToToken>
+        <PopupChangeToToken>
+            <Example></Example>
+        </PopupChangeToToken>
     )
 }

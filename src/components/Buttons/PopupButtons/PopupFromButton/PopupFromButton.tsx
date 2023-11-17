@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import sun from '../../../../assets/svg/sun.svg'
+import { Example } from '../../../Modal/TokenModal/TokenModal'
 
 const PopupChangeFromToken = styled.button`
     width:100%;
@@ -10,13 +10,12 @@ const PopupChangeFromToken = styled.button`
     margin-left: 15px;
 `
 
-const PopupChangeFromTokenIamge = styled.img`
-    width: 40px;
-    height: 40px;
-`
+
 
 export const PopupFromButton = () => {
     return(
-        <PopupChangeFromToken></PopupChangeFromToken>
+        <PopupChangeFromToken>
+            <Example></Example>
+        </PopupChangeFromToken>
     )
 }
