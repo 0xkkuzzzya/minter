@@ -57,7 +57,7 @@ const CloseDiv = styled.div`
 
 const SearchToken = styled.input`
     width: 300px;
-    height: 25px;
+    height: 30px;
     background-color: #323232;
     border: none;
     border-radius: 5px;
@@ -76,7 +76,7 @@ const LoopImg = styled.img`
 `
 
 const SearchDiv = styled.div`
-    height: 40px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
