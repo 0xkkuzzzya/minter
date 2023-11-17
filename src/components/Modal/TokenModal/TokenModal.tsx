@@ -19,7 +19,7 @@ const StyledDialogOvelay = styled(ModalDialogOverlay) `
         align-items: center;
         justify-content: center; 
         transition: background-color 3s;
-        background-color: rgba(0,0,0,.3);
+        background-color: rgba(0,0,0,.6);
     }
 `
 
