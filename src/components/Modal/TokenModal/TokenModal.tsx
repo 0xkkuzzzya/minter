@@ -57,7 +57,7 @@ const CloseDiv = styled.div`
 
 const SearchToken = styled.input`
     width: 300px;
-    height: 35px;
+    height: 25px;
     background-color: #323232;
     border: none;
     border-radius: 5px;
