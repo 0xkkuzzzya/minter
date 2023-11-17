@@ -41,7 +41,7 @@ const TokensTextH3 = styled.h3`
     color: white;
 `
 
-const TokensTextH2Number = styled.h2`
+const TokensTextH2Number = styled.h2` 
     color: white;
     margin-left: auto;
     margin-right: 20px;
