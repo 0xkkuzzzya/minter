@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { animated } from '@react-spring/web';
 import { Tokens } from '../../Tokens/Tokens';
 import loop from '../../../assets/svg/loop.svg'
+import { ConnectWallets } from '../../Wallets/ConnetsWallets/ConnestWallets';
 
 const ModalDialogOverlay = animated(DialogOverlay);
 const StyledDialogOvelay = styled(ModalDialogOverlay) `
@@ -24,17 +25,16 @@ const StyledDialogOvelay = styled(ModalDialogOverlay) `
 `
 
 const CloseButton = styled.button`
-    width: 25px;
-    height: 25px;
+    width: 20px;
     font-size: 30px;
-    margin-right: 26px;
-    margin-top: -10px;
+    margin-top: 10px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     color: white;
-    margin-left: auto;
+    margin-left: 90%;
     outline: none;
+    
 `
 
 const OpenButton = styled.button`
@@ -45,6 +45,10 @@ const OpenButton = styled.button`
     outline: none;
     cursor: pointer;
     outline: none;
+    font-family: 'Metropolis', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 9px;
 `
 
 const CloseDiv = styled.div`
@@ -53,39 +57,19 @@ const CloseDiv = styled.div`
     align-items: center;
     font-family: 'Metropolis', sans-serif;
     color: white;
+    border-bottom: 2px solid black;
 `
 
-const SearchToken = styled.input`
-    width: 300px;
-    height: 30px;
-    background-color: #323232;
-    border: none;
-    border-radius: 5px;
-    margin-left: 5px;
-    outline: none;
-    font-size: 16px;
-    color: #5e5e5e;
-    font-weight: 600;
-    font-family: 'Metropolis', sans-serif;
-`
-
-const LoopImg = styled.img`
-    width: 25px;
-    height: 25px;
-    margin-left: 15px;
-`
-
-const SearchDiv = styled.div`
-    height: 50px;
+const ContentDiv = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #323232;
-    border-radius: 5px;
-    margin-left: 26px;
-    margin-right: 26px;
-    margin-bottom: 10px;
-    border: 2px solid black;
+    height: 100%;
+`
+
+const WalletList = styled.div`
+    width: 100%;
+    height: 100%;
 `
 
 const ModalText = styled.h4`
@@ -93,44 +77,50 @@ const ModalText = styled.h4`
     font-size: 20px;
 `
 
+const WalletsTextH3 = styled.h3`
+    margin-top: 15px;
+    color: white;
+`
+
+
 
 const ModalDialogContent = animated(DialogContent);
 const StyledDialogContent = styled(ModalDialogContent) `
     &[data-reach-dialog-content] {
         background-color: rgb(35,35,35);
-        width: 370px;
+        width:400px;
         height: 600px;
         display: flex;
         flex-direction: column;
-        padding-bottom: 20px;
-        border-radius: 10px;
+        border-radius: 20px;
         border: 2px solid black;
-        margin-top: 70px;
+        margin-top: 80px;
+        position: relative;
+        outline: none;
     }
 `
 
 
-export const Example = () => {
+export const ConnectExample = () => {
     const [showDialog, setShowDialog] = React.useState(false);
     const open = () => setShowDialog(true);
     const close = () => setShowDialog(false);
   
     return (
       <div>
-        <OpenButton onClick={open}></OpenButton>
+        <OpenButton onClick={open}>Connect</OpenButton>
         <StyledDialogOvelay isOpen={showDialog} onDismiss={close}>
             <StyledDialogContent>
-                <CloseDiv>
-                    <ModalText>Select a token</ModalText>
+                <CloseDiv>              
                     <CloseButton onClick={close}>
                     <span aria-hidden>×</span>
                     </CloseButton>
                 </CloseDiv>
-                <SearchDiv>
-                    <LoopImg src={loop}></LoopImg>
-                    <SearchToken placeholder='Search'></SearchToken>
-                </SearchDiv>
-                <Tokens></Tokens>
+                <ContentDiv>
+                    <WalletList>
+                        <ConnectWallets></ConnectWallets>
+                    </WalletList>
+                </ContentDiv>
             </StyledDialogContent>
         </StyledDialogOvelay>
       </div>

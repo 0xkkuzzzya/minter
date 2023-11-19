@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { ConnectExample } from '../../Modal/ConnectModal/ConnectModal'
 
-const ButtonConnect = styled.button`
+const ButtonConnect = styled.div`
     width: 120px;
     height: 35px;
     background: linear-gradient(to right, #77bff9, #2d96ff);
@@ -14,15 +15,11 @@ const ButtonConnect = styled.button`
     cursor: pointer;
 `
 
-const ButtonConnectText = styled.a`
-   font-weight: 500;
-   font-size: 17px;
-`
 
 export const ConnectButton = () => {
     return(
         <ButtonConnect>
-            <ButtonConnectText>Connect</ButtonConnectText>
+            <ConnectExample></ConnectExample>
         </ButtonConnect>
     )
 }

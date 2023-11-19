@@ -26,7 +26,7 @@ const Img = styled.img`
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-left: 20px;
+    margin-left: 26px;
 `
 
 const TokensText = styled.div`
@@ -44,7 +44,7 @@ const TokensTextH3 = styled.h3`
 const TokensTextH2Number = styled.h2` 
     color: white;
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 26px;
 `
 
 const TokensTextH5 = styled.h5`
