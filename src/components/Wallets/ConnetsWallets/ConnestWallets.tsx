@@ -1,21 +1,23 @@
 import styled from 'styled-components' 
-import qube from '../../assets/QubeLogo.jpg'
 import keplr from '../../../assets/svg/Keplr.svg'
+import leap from '../../../assets/svg/LeapWallet.svg'
 
 const ArrWallets = styled.div`
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
 `
 
 const WalletFields = styled.button`
     background-color: rgb(50,50,50);
+    width: 225px;
+    height: 225px;
     border: none;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,14 +26,14 @@ const WalletFields = styled.button`
     cursor: pointer;
     outline:none;
     margin-top: 10px;
+    justify-content: center;
 `
 
 const Img = styled.img`
-    width: 50px;
-    height: 50px;
-    margin-left: 26px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 170px;
+    height: 170px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 `
 
 const WalletsText = styled.div`
@@ -65,17 +67,10 @@ export const ConnectWallets = () => {
         <ArrWallets>
             <WalletFields>
                 <Img src={keplr}></Img>
-                <WalletsTextH3>Keplr</WalletsTextH3>
             </WalletFields>
             <WalletFields>
-                <Img src={keplr}></Img>
-                <WalletsTextH3>Keplr</WalletsTextH3>
+                <Img src={leap}></Img>
             </WalletFields>
-            <WalletFields>
-                <Img src={keplr}></Img>
-                <WalletsTextH3>Keplr</WalletsTextH3>
-            </WalletFields>
-            
         </ArrWallets>
     )
 }

@@ -26,7 +26,7 @@ const StyledDialogOvelay = styled(ModalDialogOverlay) `
 
 const CloseButton = styled.button`
     width: 20px;
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 10px;
     background-color: transparent;
     border: none;
@@ -57,7 +57,6 @@ const CloseDiv = styled.div`
     align-items: center;
     font-family: 'Metropolis', sans-serif;
     color: white;
-    border-bottom: 2px solid black;
 `
 
 const ContentDiv = styled.div`
@@ -88,13 +87,13 @@ const ModalDialogContent = animated(DialogContent);
 const StyledDialogContent = styled(ModalDialogContent) `
     &[data-reach-dialog-content] {
         background-color: rgb(35,35,35);
-        width:400px;
-        height: 600px;
+        width: 535px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         border-radius: 20px;
         border: 2px solid black;
-        margin-top: 80px;
+        margin-top: -10px;
         position: relative;
         outline: none;
     }
