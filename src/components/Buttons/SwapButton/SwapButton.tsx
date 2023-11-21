@@ -15,6 +15,7 @@ const ConvertSwapButton = styled.div `
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 40px;
 `
 
 const ButtonSwapText = styled.a`

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const FromInputAmount = styled.input`
-    width:65%;
+    width:50%;
     height: 100%;
     background: transparent;
     border: none;

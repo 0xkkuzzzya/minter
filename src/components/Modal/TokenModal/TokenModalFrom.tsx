@@ -4,6 +4,12 @@ import styled from 'styled-components';
 import { animated } from '@react-spring/web';
 import { Tokens } from '../../Tokens/Tokens';
 import loop from '../../../assets/svg/loop.svg'
+import atom from '../../../assets/svg/AtomLogo.svg'
+import arrow from '../../../assets/svg/InfoArrrowDown.svg'
+
+const Open = () =>{
+    console.log(123)
+}
 
 const ModalDialogOverlay = animated(DialogOverlay);
 const StyledDialogOvelay = styled(ModalDialogOverlay) `
@@ -38,13 +44,15 @@ const CloseButton = styled.button`
 `
 
 const OpenButton = styled.button`
-    width:100%;
+    max-width: 200px;
     height:30px;
-    background:transparent;
     border:none;
     outline: none;
     cursor: pointer;
-    outline: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
 
 const CloseDiv = styled.div`
@@ -93,6 +101,25 @@ const ModalText = styled.h4`
     font-size: 20px;
 `
 
+const PopupImg = styled.img`
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+`
+const PopupTextH3 = styled.h3`
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: transparent;
+    text-align: left;
+`
+
+const ModalArrowImg = styled.img `
+    margin-top:-5px;
+    cursor: pointer;
+    margin-left: 5px;
+`
+
 
 const ModalDialogContent = animated(DialogContent);
 const StyledDialogContent = styled(ModalDialogContent) `
@@ -110,14 +137,18 @@ const StyledDialogContent = styled(ModalDialogContent) `
 `
 
 
-export const Example = () => {
+export const TokenModalFrom = () => {
     const [showDialog, setShowDialog] = React.useState(false);
     const open = () => setShowDialog(true);
     const close = () => setShowDialog(false);
   
     return (
       <div>
-        <OpenButton onClick={open}></OpenButton>
+        <OpenButton onClick={Open}>
+            <PopupImg src={atom}></PopupImg>
+            <PopupTextH3>ATOM</PopupTextH3>
+            <ModalArrowImg src={arrow}></ModalArrowImg>
+        </OpenButton>
         <StyledDialogOvelay isOpen={showDialog} onDismiss={close}>
             <StyledDialogContent>
                 <CloseDiv>

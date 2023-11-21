@@ -8,7 +8,7 @@ const BalanceText = styled.div`
     font-size: 17px;
     position: absolute;
     margin-top: -50px;
-    margin-left: 198px;
+    margin-left: 183px;
     @media (max-width: 500px){
         margin-left: 240px;
     }

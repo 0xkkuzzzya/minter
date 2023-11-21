@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { InfoButton } from '../Buttons/InfoButton/InfoButton'
-import ArrowDown from '../../assets/svg/InfoArrrowDown.svg'
+
+
+
 
 const InfoText = styled.div `
     margin-top: 25px;
@@ -14,11 +16,14 @@ const InfoText = styled.div `
     align-items: center;
     font-weight: 600;
     font-size: 17px;
+    flex-direction: column;
 `
 
-const InfoImg = styled.img `
-    margin-top:-5px;
-    cursor: pointer;
+
+
+const InfoHiddenBlock = styled.div`
+    max-height: 0;
+    overflow: hidden;
 `
 
 
@@ -26,7 +31,8 @@ export const InfoBlock = () => {
     return(
         <InfoText>
             <InfoButton></InfoButton>
-            <InfoImg src={ArrowDown}></InfoImg>
+            
+            <InfoHiddenBlock>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, explicabo.</InfoHiddenBlock>
         </InfoText>
     )
 }

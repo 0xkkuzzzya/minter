@@ -8,9 +8,10 @@ import { InfoBlock } from './Info/InfoBlock'
 
 const MainContainer = styled.div `
     max-width: 400px;
-    height:550px;
+    max-height:100%;
     background-color: #232323;
     margin-top:150px;
+    margin-bottom: auto;
     border-radius:7px;
     margin-left: auto;
     margin-right: auto;
@@ -25,6 +26,8 @@ const MainContainer = styled.div `
         margin-top:0px;
     }
 `
+
+
 
 const Container = () => {
     return(

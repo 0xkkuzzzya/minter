@@ -19,7 +19,7 @@ const WalletFields = styled.button`
     margin-right: 10px;
     border-radius: 30px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-family: 'Metropolis', sans-serif;
     color: white;
@@ -46,7 +46,8 @@ const WalletsText = styled.div`
 const WalletsTextH3 = styled.h3`
     color: white;
     font-size: 18px;
-    margin-left: 10px;
+    position: absolute;
+    margin-top: 15em;
 `
 
 const WalletsTextH2Number = styled.h2` 
@@ -67,9 +68,11 @@ export const ConnectWallets = () => {
         <ArrWallets>
             <WalletFields>
                 <Img src={keplr}></Img>
+                <WalletsTextH3>Keplr</WalletsTextH3>
             </WalletFields>
             <WalletFields>
                 <Img src={leap}></Img>
+                <WalletsTextH3>Leap</WalletsTextH3>
             </WalletFields>
         </ArrWallets>
     )
