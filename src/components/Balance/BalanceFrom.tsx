@@ -10,7 +10,6 @@ const BalanceText = styled.div`
     margin-top: -50px;
     margin-left: -100%;
     padding-right: 11px;
-   
 `
 
 

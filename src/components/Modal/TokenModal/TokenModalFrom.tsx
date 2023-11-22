@@ -7,9 +7,6 @@ import loop from '../../../assets/svg/loop.svg'
 import atom from '../../../assets/svg/AtomLogo.svg'
 import arrow from '../../../assets/svg/InfoArrrowDown.svg'
 
-const Open = () =>{
-    console.log(123)
-}
 
 const ModalDialogOverlay = animated(DialogOverlay);
 const StyledDialogOvelay = styled(ModalDialogOverlay) `
@@ -144,7 +141,7 @@ export const TokenModalFrom = () => {
   
     return (
       <div>
-        <OpenButton onClick={Open}>
+        <OpenButton onClick={open}>
             <PopupImg src={atom}></PopupImg>
             <PopupTextH3>ATOM</PopupTextH3>
             <ModalArrowImg src={arrow}></ModalArrowImg>
