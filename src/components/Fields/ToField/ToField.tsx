@@ -18,14 +18,13 @@ const ConvertTo = styled.div `
 `
 
 const ToFieldOutputAmount = styled.div`
-    width:65%;
+    width: 100%;
     height:100%;
     background: transparent;
     color: rgb(220,220,220);
     text-align: right;
     font-size: 23px;
-    padding-right: 15px;
-    padding-top:50px;
+    margin-right: 15px;
     font-family: system-ui, -apple-system,
      BlinkMacSystemFont, 'Segoe UI', Roboto, 
      Oxygen, Ubuntu, Cantarell, 'Open Sans', 
@@ -44,16 +43,23 @@ const ToFieldText = styled.a`
    font-size: 16px;
 `
 
+const Down = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+`
+
 
 export const ToField = () => {
     return(
         <ConvertTo>
             <ToFieldText>To</ToFieldText>
+            <Down>
+                <PopupSelectToToken></PopupSelectToToken>
+                <ToFieldOutputAmount>0</ToFieldOutputAmount>
+            </Down>
             <BalanceTo></BalanceTo>
-            <PopupSelectToToken></PopupSelectToToken>
-            <ToFieldOutputAmount>
-                0
-            </ToFieldOutputAmount>
         </ConvertTo>
     )
 }

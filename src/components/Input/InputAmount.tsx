@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 const FromInputAmount = styled.input`
-    width:50%;
+    width: 100%;
     height: 100%;
     background: transparent;
     border: none;
     text-align: right;
     color: rgb(220,220,220);
     font-size: 24px;
-    padding-right: 15px;
+    margin-right: 8px;
     outline-width: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 `

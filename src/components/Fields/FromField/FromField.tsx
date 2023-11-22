@@ -30,13 +30,24 @@ const FromFieldText = styled.a`
    font-size: 16px;
 `
 
+const Up = styled.div`
+    
+`
+
+const Down = styled.div`
+    display: flex;
+    width: 100%;
+`
+
 export const FromField = () => {
     return(
             <ConvertFrom>
                 <FromFieldText>From</FromFieldText>
+                <Down>
+                    <PopupSelectFromToken></PopupSelectFromToken>
+                    <InputAmount></InputAmount>
+                </Down>
                 <BalanceFrom></BalanceFrom>
-                <PopupSelectFromToken></PopupSelectFromToken>
-                <InputAmount></InputAmount>
             </ConvertFrom>
     )
 }

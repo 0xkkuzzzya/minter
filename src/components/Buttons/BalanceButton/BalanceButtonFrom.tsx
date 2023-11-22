@@ -11,17 +11,18 @@ const ButtonBalance = styled.button`
    font-size: 12px;
    color: #444;
    outline: none;
+   text-align: right;
 `
 
 const BalanceText = styled.a`
     font-size: 12px;
-    text-align: right;
+    
 `
 
 export const BalanceButtonFrom = () => {
     return(
         <ButtonBalance>
-            <BalanceText>Available: 10.059 ATOM</BalanceText>
+            <BalanceText>Available: 1235533.22 ATOM</BalanceText>
         </ButtonBalance>
     )
 }

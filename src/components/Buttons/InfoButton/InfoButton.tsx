@@ -2,11 +2,6 @@ import styled from 'styled-components'
 import { InfoBlock } from '../../Info/InfoBlock'
 import arrow from '../../../assets/svg/InfoArrrowDown.svg'
 
-const Open = () => {
-    document.getElementById("open").addEventListener('click', () => {
-        let content = el.next
-    })
-}
 
 const ButtonInfoMain = styled.button`
     width: 100%;
@@ -32,7 +27,7 @@ const InfoImg = styled.img `
 
 export const InfoButton = () => {
     return(
-        <ButtonInfoMain id="open" onClick={Open}>
+        <ButtonInfoMain>
              1 ATOM = 8.722 USQ
              <InfoImg src={arrow}></InfoImg>
         </ButtonInfoMain>
